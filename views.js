@@ -17,12 +17,16 @@ var headerView = Backbone.View.extend({
 var profileView = Backbone.View.extend({
 	el: '.page',
 
-	events: {
-   		'click .startBtn' : 'renderArticleList',
-   		'click .about': 'renderAbout'
-  	},
 
 	render: function() {
 		this.$el.html(_.template($('#profile').html()));
+	},
+});
+
+var artListView = Backbone.View.extend({
+	el: '.page',
+
+	render: function() {
+		this.$el.html(_.template($('#art-list').html()));
 	},
 });
