@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
+
+
+/* home */
+.home .logo-accueil {
+    margin-top: 50vh;
+}
+.home .logo-accueil img {
+    margin-top: -90px;
+}
+
+.montreal-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
