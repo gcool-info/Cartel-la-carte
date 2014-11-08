@@ -17,6 +17,11 @@ var headerView = Backbone.View.extend({
 var profileView = Backbone.View.extend({
 	el: '.page',
 
+	events: {
+   		'click .startBtn' : 'renderArticleList',
+   		'click .about': 'renderAbout'
+  	},
+
 	render: function() {
 		this.$el.html(_.template($('#profile').html()));
 	},
