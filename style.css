@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Vollkorn);
 
+body {
+    font-family: 'Vollkorn', serif;
+}
 
 /* home */
 .home .logo-accueil {
