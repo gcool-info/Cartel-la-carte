@@ -34,6 +34,7 @@ var artListView = Backbone.View.extend({
 	el: '.page',
 
 	render: function() {
+		$('body').css('background-color', 'ebebeb')
 		this.$el.html(_.template($('#art-list').html()));
 	},
 });

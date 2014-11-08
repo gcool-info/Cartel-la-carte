@@ -27,5 +27,4 @@ var Router = Backbone.Router.extend({
 		artList.render();
 	}
 
-
 });
