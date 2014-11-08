@@ -9,13 +9,13 @@ var Router = Backbone.Router.extend({
 	},
 
 	home:function() {
-		header.render();
 		home.render();
 	},
 
 	profilePage: function() {
 		header.render();
-		var paths = new pathView();
-		paths.render();
+
+		var profile = new profileView();
+		profile.render();
 	}
 });

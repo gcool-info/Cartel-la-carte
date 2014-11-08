@@ -14,10 +14,10 @@ var headerView = Backbone.View.extend({
 	},
 });
 
-var pathView = Backbone.View.extend({
+var profileView = Backbone.View.extend({
 	el: '.page',
 
 	render: function() {
-		this.$el.html();
+		this.$el.html(_.template($('#profile').html()));
 	},
 });
