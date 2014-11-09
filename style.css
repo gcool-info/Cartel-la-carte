@@ -230,3 +230,14 @@ a.sprite.active
 .contents .panel-group .panel-default>.panel-heading {
     background-color: #FFFFFF;
 }
+.contents .panel-title a:link,
+.contents .panel-title a:visited
+{
+    color: #F23A3B;
+    text-decoration: none;
+}
+.contents .panel-title a.collapsed
+{
+    color: #000;
+    text-decoration: none;
+}

@@ -131,5 +131,17 @@ var artworkCoquin = Backbone.View.extend({
 
 	render: function() {
 		this.$el.html(_.template($('#artworkCoquin').html()));
+
+
+		$('.accordion').on('show', function (e) {
+			$(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+		});
+
+		$('.accordion').on('hide', function (e) {
+			$(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+
+
+		});
+
 	},
 });
