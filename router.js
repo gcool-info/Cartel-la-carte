@@ -1,4 +1,5 @@
 var Router = Backbone.Router.extend({
+
 	routes: {
 		'' : 'home',
 		'profile': 'profilePage',
@@ -13,6 +14,7 @@ var Router = Backbone.Router.extend({
 
 	home:function() {
 		home.render();
+		footer.render();
 	},
 
 	profilePage: function() {
@@ -20,6 +22,7 @@ var Router = Backbone.Router.extend({
 
 		var profile = new profileView();
 		profile.render();
+		footer.render();
 	},
 
 	artListPage: function() {

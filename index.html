@@ -15,6 +15,7 @@
 	    </div>
 		<div class="page">      
 		</div>
+        <div class="footer"></div>
     </div>
 
   	<!-- Templates -->
@@ -43,9 +44,14 @@
 	</script>
 
     <script type="text/template" id="footer">
-    <div class="footer">
+        <div class="footer text-center">
+            <div class="button-footer-wrap">
+                <a href="#start" class="button-start">
+                    Commencer
+                </a>
+            </div>
 
-    </div>
+        </div>
     </script>
 
 	<script type="text/template" id="home">
@@ -257,7 +263,8 @@
 	var router = new Router();
 	var header = new headerView({model: appModel});
 	var home = new homeScreen();
-  
+	var footer = new footerView();
+
 	Backbone.history.start();
   </script>
 </body></html>
