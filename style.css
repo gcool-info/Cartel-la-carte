@@ -4,6 +4,9 @@ body {
     font-family: 'Vollkorn', serif;
     background-color: #ebebeb!important;
 }
+body p, .contents{
+	font-size: 18px;
+}
 .no-serif
 {
     font-family: 'Vollkorn', serif;
@@ -259,6 +262,12 @@ a.sprite.active
     color: #F23A3B;
     text-decoration: none;
 }
+.panel-body {
+	padding: 30px;
+}
+.panel-heading {
+	padding: 15px 30px;
+}
 .contents .panel-title a.collapsed
 {
     color: #000;
@@ -268,6 +277,9 @@ a.sprite.active
 .single-art .video-container
 {
     padding-top: 60px;
+}
+.single-art .container{
+	padding: 30px;
 }
 
 .progress-bar {
