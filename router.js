@@ -85,6 +85,8 @@ var Router = Backbone.Router.extend({
 
 		appModel.set('headerTitle', 'téméraire');
 		appModel.set('headerColor', 'ec462f');
+
+		$('html,body').scrollTop(0);
 	},
 
 	artworkCoquinPage: function() {
@@ -96,6 +98,8 @@ var Router = Backbone.Router.extend({
 
 		appModel.set('headerTitle', 'coquin');
 		appModel.set('headerColor', '9a4d9e');
+
+		$('html,body').scrollTop(0);
 	}
 
 });
