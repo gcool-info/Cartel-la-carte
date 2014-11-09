@@ -14,7 +14,7 @@ var headerView = Backbone.View.extend({
   	},
 
 	render: function() {
-		this.$el.html(_.template($('#header').html()));
+		this.$el.html(_.template($('#header').html(), {header: appModel}));
 	},
 	
 	goBack: function() {
