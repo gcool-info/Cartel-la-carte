@@ -78,6 +78,8 @@ var artListTemeraireView = Backbone.View.extend({
 		$('body').css('background-color', 'ebebeb');		
 		this.$el.html(_.template($('#art-list-temeraire').html()));
 	},
+
+	
 });
 
 var artListCoquinView = Backbone.View.extend({
@@ -121,7 +123,7 @@ var artworkTemeraireView = Backbone.View.extend({
 	render: function() {
 		$('body').css('background-color', 'EBEBEB');
 		this.$el.html(_.template($('#artworkTemeraire').html()));
-	},
+	}
 });
 
 var artworkCoquinView = Backbone.View.extend({
@@ -131,4 +133,18 @@ var artworkCoquinView = Backbone.View.extend({
 		this.$el.html(_.template($('#artworkCoquin').html()));
 
 	},
+});
+
+var timerView = Backbone.View.extend({
+	el: '.timer',
+
+	render: function() {
+		this.$el.html(_.template($('#progress-bar').html()));
+	},
+
+	startTimer: function() {
+		$('.foreground').animate({
+		    left: '0'
+		  }, 300000, "linear");
+	}
 });
