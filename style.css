@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Vollkorn', serif;
+    background-color: #ebebeb!important;
 }
 .no-serif
 {
@@ -21,7 +22,7 @@ h2 {
     margin-top: 50vh;
 }
 .home .logo-accueil img {
-    margin-top: -90px;
+    margin-top: -188px;
 }
 
 .montreal-logo {
