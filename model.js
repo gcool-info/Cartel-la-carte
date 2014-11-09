@@ -2,6 +2,7 @@
 var appModel = Backbone.Model.extend({
 	default: {
 		headerTitle: 'Téméraire',
-		headerColor: '3e3e3e'
+		headerColor: '3e3e3e',
+		nextRoute: '#'
 	}
 });

@@ -190,3 +190,17 @@ a.sprite.active
     font-size: 30px;
     text-align: center;
 }
+
+#headerTitle {
+	color: white;
+	font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+	display: inline;
+}
+
+.navbar-header {
+	width: 0;
+}

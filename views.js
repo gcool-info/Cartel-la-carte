@@ -17,10 +17,10 @@ var headerView = Backbone.View.extend({
    		'click #back' : 'goBack',
   	},
 
-	render: function() {
-		$('.navbar-inverse').css('background-color', this.model.headerColor);
-		console.log(this.model); 
-		this.$el.html(_.template($('#header').html(), {model: this.model}));
+	render: function() {		
+		this.$el.html(_.template($('#header').html()));
+		$('#headerTitle').text(appModel.get('headerTitle'));
+		$('.navbar-inverse').css('background-color', appModel.get('headerColor'));
 	},
 	
 	goBack: function() {

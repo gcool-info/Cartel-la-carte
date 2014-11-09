@@ -26,7 +26,8 @@ var Router = Backbone.Router.extend({
 	},
 
 	artListPage: function() {
-		header.render();
+		appModel.set('headerTitle', 'téméraire');
+		appModel.set('headerColor', 'ec462f');
 
 		var artList = new artListView();
 		artList.render();
