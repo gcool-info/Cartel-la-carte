@@ -2,7 +2,8 @@ var Router = Backbone.Router.extend({
 	routes: {
 		'' : 'home',
 		'profile': 'profilePage',
-		'art-list': 'artListPage'
+		'art-list': 'artListPage',
+		'explanation': 'explanationPage'
 	},
 
 	initialize: function() {
@@ -25,6 +26,14 @@ var Router = Backbone.Router.extend({
 
 		var artList = new artListView();
 		artList.render();
+	},
+
+	explanationPage: function() {
+		appModel.set('headerTitle', 'prototype');
+		header.render();
+
+		var explanation = new explanationView();
+		explanation.render();
 	}
 
 });

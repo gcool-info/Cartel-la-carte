@@ -38,3 +38,13 @@ var artListView = Backbone.View.extend({
 		this.$el.html(_.template($('#art-list').html()));
 	},
 });
+
+
+var explanationView = Backbone.View.extend({
+	el: '.page',
+
+	render: function() {
+		$('body').css('background-color', 'ebebeb')
+		this.$el.html(_.template($('#explanation').html()));
+	},
+});

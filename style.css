@@ -100,3 +100,18 @@ h2 {
 .list-element .image {
 	text-align: center;
 }
+
+.explanation {
+	margin-top: 20vh;
+}
+
+.explanation .btn-circle {
+	width: 150px;
+	height: 150px;
+	border: none;
+}
+
+.explanation .fa {
+	font-size: 5em;
+	color: #00a4e4;
+}
