@@ -53,6 +53,9 @@ var Router = Backbone.Router.extend({
 		explanation.render();
 	},
 	artworkTemerairePage: function() {
+		appModel.set('headerTitle', 'téméraire');
+		appModel.set('headerColor', 'ec462f');
+
 		var artworkTemeraire = new artworkTemeraireView();
 		artworkTemeraire.render();
 
@@ -61,6 +64,9 @@ var Router = Backbone.Router.extend({
 	},
 
 	artworkCoquinPage: function() {
+		appModel.set('headerTitle', 'Coquin');
+		appModel.set('headerColor', 'ec462f');
+
 		var artworkCoquin = new artworkCoquinView();
 		artworkCoquin.render();
 

@@ -153,10 +153,10 @@ a.sprite.active
 }
 .curieux { background-image: url('assets/img/ico-curieux.png'); }
 .joueur { background-image: url('assets/img/ico-joueur.png'); }
-.temeraire { background-image: url('assets/img/ico-téméraire.png'); }
+.temeraire { background-image: url('assets/img/ico-temeraire.png'); }
 
 .comique { background-image: url('assets/img/ico-comique.png'); }
-.melancolique { background-image: url('assets/img/ico-mélancolique.png'); }
+.melancolique { background-image: url('assets/img/ico-melancolique.png'); }
 .coquin { background-image: url('assets/img/ico-coquin.png'); }
 
 .explanation .the-text {
