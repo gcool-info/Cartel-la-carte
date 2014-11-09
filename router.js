@@ -18,6 +18,7 @@ var Router = Backbone.Router.extend({
 	home:function() {
 		home.render();
 		appModel.set('nextRoute', 'profile');
+		$('.timer').html('');
 	},
 
 	profilePage: function() {
