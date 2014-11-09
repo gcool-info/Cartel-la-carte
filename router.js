@@ -3,7 +3,8 @@ var Router = Backbone.Router.extend({
 	routes: {
 		'' : 'home',
 		'profile': 'profilePage',
-		'art-list': 'artListPage',
+		'art-list-temeraire': 'artListTemerairePage',
+		'art-list-coquin': 'artListCoquinPage',
 		'explanation': 'explanationPage',
 		'artworkTemeraire': 'artworkTemerairePage',
 		'artworkCoquin': 'artworkCoquinPage',
@@ -28,9 +29,20 @@ var Router = Backbone.Router.extend({
 		appModel.set('nextRoute', 'explanation');
 	},
 
-	artListPage: function() {
-		var artList = new artListView();
-		artList.render();
+	artListTemerairePage: function() {
+		appModel.set('headerTitle', 'téméraire');
+		appModel.set('headerColor', 'ec462f');
+
+		var artListTemeraire = new artListTemeraireView();
+		artListTemeraire.render();
+	},
+
+	artListCoquinPage: function() {
+		var artListCoquin = new artListCoquinView();
+		artListCoquin.render();
+
+		appModel.set('headerTitle', 'coquin');
+		appModel.set('headerColor', '9a4d9e');
 	},
 
 	explanationPage: function() {

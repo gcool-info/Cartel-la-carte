@@ -72,23 +72,26 @@ var profileView = Backbone.View.extend({
 	},
 });
 
-var artListView = Backbone.View.extend({
+var artListTemeraireView = Backbone.View.extend({
+	el: '.page',
+
+	render: function() {
+		$('body').css('background-color', 'ebebeb');		
+		this.$el.html(_.template($('#art-list-temeraire').html()));
+		
+	},
+});
+
+var artListCoquinView = Backbone.View.extend({
 	el: '.page',
 
 	render: function() {
 		$('body').css('background-color', 'ebebeb');
-
-		var currentMood = appModel.get('headerTitle');
-
-
-		if (currentMood == 'téméraire' ) {
-			this.$el.html(_.template($('#art-list-temeraire').html()));
-		} else {
-			this.$el.html(_.template($('#art-list-coquin').html()));
-		}
+		this.$el.html(_.template($('#art-list-coquin').html()));
 		
 	},
 });
+
 
 
 var explanationView = Backbone.View.extend({
@@ -100,15 +103,11 @@ var explanationView = Backbone.View.extend({
 	},
 
 	goTemeraire: function() {
-		appModel.set('headerTitle', 'téméraire');
-		appModel.set('headerColor', 'ec462f');
-		router.navigate('art-list', {trigger: true});
+		router.navigate('art-list-temeraire', {trigger: true});
 	},
 
 	goCoquin: function() {
-		appModel.set('headerTitle', 'coquin');
-		appModel.set('headerColor', '9a4d9e');
-		router.navigate('art-list', {trigger: true});
+		router.navigate('art-list-coquin', {trigger: true});
 	},
 
 	render: function() {
