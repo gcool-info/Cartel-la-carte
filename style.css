@@ -111,7 +111,7 @@ h2 {
 }
 
 .explanation {
-	margin-top: 20vh;
+	padding-top: 20vh;
 }
 
 .explanation .btn-circle {
@@ -123,4 +123,21 @@ h2 {
 .explanation .fa {
 	font-size: 5em;
 	color: #00a4e4;
+}
+
+.explanation .the-text {
+	margin-top: 3em;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.explanation .the-text h2 {
+	font-size: 3.5em;
+}
+
+.explanation .the-text h3 {
+	margin-top: 2em;
+	font-style: italic;
+	font-size: 2em;
 }

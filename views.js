@@ -9,12 +9,18 @@ var homeScreen = Backbone.View.extend({
 var headerView = Backbone.View.extend({
 	el: '.header',
 
+	initialize: function() {
+		this.listenTo(appModel, 'change', this.render);
+	},
+
 	events: {
    		'click #back' : 'goBack',
   	},
 
 	render: function() {
-		this.$el.html(_.template($('#header').html(), {header: appModel}));
+		$('.navbar-inverse').css('background-color', appModel.headerColor);
+		console.log(appModel.get('headerTitle'));
+		this.$el.html(_.template($('#header').html(), {model: appModel.get('headerTitle')}));
 	},
 	
 	goBack: function() {
@@ -57,6 +63,6 @@ var explanationView = Backbone.View.extend({
 
 	render: function() {
 		$('body').css('background-color', 'ebebeb')
-		this.$el.html(_.template($('#explanation').html()));
+		this.$el.html(_.template($('#explanation').html()), {model: appModel});
 	},
 });

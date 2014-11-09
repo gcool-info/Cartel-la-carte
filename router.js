@@ -30,7 +30,7 @@ var Router = Backbone.Router.extend({
 
 	explanationPage: function() {
 		appModel.set('headerTitle', 'prototype');
-		header.render();
+		appModel.set('headerColor', '3e3e3e');
 
 		var explanation = new explanationView();
 		explanation.render();

@@ -38,7 +38,7 @@
                     </button>
                     <a class="navbar-brand" id="back"><i class="fa fa-chevron-left"></i></a>
                 </div>
-                <%= header.currentMood %>
+                
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#">Home</a></li>
@@ -184,22 +184,37 @@
   </script>
 
   <script type="text/template" id="explanation">
+
+    <div class="col-xs-2 no-pad top-timeline blue "></div>
+    <div class="col-xs-2 no-pad top-timeline yellow "></div>
+    <div class="col-xs-2 no-pad top-timeline orange "></div>
+    <div class="col-xs-2 no-pad top-timeline red  "></div>
+    <div class="col-xs-2 no-pad top-timeline violet "></div>
+    <div class="col-xs-2 no-pad top-timeline green  "></div>
+
     <div class="row text-center explanation">
       <span class="btn btn-circle btn-default">
         <div>
           <i class="fa fa-info"></i>
         </div>
       </span>
+      <div class="the-text">
+        <h2 class="title">
+          Le projet étant à l&#39;étape de prototype, nous vous offrons 2 parcours.
+        </h2>
+        <h3 class="subtext">
+          Et chaque parcours n&#39;offre qu&#39;une oeuvre approfondie
+        </h3>
+      </div>
     </div>
-
   </script>
 
   <script type="text/javascript">
+  var appModel = new appModel();
 	var router = new Router();
 	var header = new headerView();
 	var home = new homeScreen();
-  var appModel = new appModel();
-
+  
 	Backbone.history.start();
   </script>
 </body></html>
