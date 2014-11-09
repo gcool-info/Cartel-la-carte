@@ -52,6 +52,8 @@ h2 {
 .red { background-color: #ef4035; }
 .violet { background-color: #9a4d9e; }
 .green { background-color: #21ac59; }
+.white { background-color: white; }
+.black { background-color: rgb(62, 62, 62); }
 
 .row.title
 {
@@ -241,4 +243,18 @@ a.sprite.active
     color: #000;
     text-decoration: none;
     display: block;
+}
+
+.progress-bar {
+	position: absolute;
+}
+
+.progress-bar.background {
+	width: 100%;
+}
+
+.progress-bar.foreground {
+	width: 100%;
+	left: -100%;
+>>>>>>> c6aa3eb763271cb69ae5ac92355bdcd9ddff4d4e
 }
