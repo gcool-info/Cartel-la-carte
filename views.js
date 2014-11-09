@@ -51,7 +51,7 @@ var profileView = Backbone.View.extend({
 
 	events: {
 		'click a.btn-circle': 'addClass',
-		'click a.sprite': 'addClassHumeur'
+		'click .humeurs a.sprite': 'addClassHumeur'
 	},
 
 	addClass: function (e) {
@@ -60,7 +60,7 @@ var profileView = Backbone.View.extend({
 		e.preventDefault();
 	},
 	addClassHumeur: function(e) {
-		$('a.sprite').removeClass('active'),
+		$('.humeurs a.sprite').removeClass('active'),
 			$(e.currentTarget).addClass('active');
 		e.preventDefault();
 	},
