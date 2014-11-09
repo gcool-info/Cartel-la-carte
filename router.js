@@ -29,6 +29,7 @@ var Router = Backbone.Router.extend({
 		
 		appModel.set('startTimer', false);
 		appModel.set('nextRoute', 'explanation');
+		$('.timer').html('');
 	},
 
 	artListTemerairePage: function() {
@@ -73,6 +74,7 @@ var Router = Backbone.Router.extend({
 
 		var explanation = new explanationView();
 		explanation.render();
+		$('.timer').html('');
 	},
 	artworkTemerairePage: function() {
 		appModel.set('headerTitle', 'téméraire');
