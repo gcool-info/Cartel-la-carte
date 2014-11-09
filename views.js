@@ -106,6 +106,7 @@ var artworkTemeraireView = Backbone.View.extend({
 	el: '.page',
 
 	render: function() {
+		$('body').css('background-color', 'EBEBEB');
 		this.$el.html(_.template($('#artworkTemeraire').html()));
 	},
 });

@@ -211,3 +211,15 @@ a.sprite.active
 .navbar-inverse {
 	border: none;
 }
+
+.contents .panel
+{
+    margin: 0;
+}
+.contents .panel-group .panel+.panel
+{
+    margin: 0;
+}
+.contents .panel-group .panel-default>.panel-heading {
+    background-color: #FFFFFF;
+}
