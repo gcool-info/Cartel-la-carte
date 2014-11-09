@@ -17,14 +17,6 @@
 		</div>
     </div>
 
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="lib/underscore-min.js"></script>
-  <script src="lib/backbone-min.js"></script>
-  <script src="router.js"></script>
-  <script src="views.js"></script>
-  <script src="model.js"></script>
-
   	<!-- Templates -->
 	<script type="text/template" id="header">
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -252,10 +244,18 @@
         </div>
     </script>
 
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="lib/underscore-min.js"></script>
+  <script src="lib/backbone-min.js"></script>
+  <script src="router.js"></script>
+  <script src="views.js"></script>
+  <script src="model.js"></script>
+
   <script type="text/javascript">
   var appModel = new appModel();
 	var router = new Router();
-	var header = new headerView();
+	var header = new headerView({model: appModel});
 	var home = new homeScreen();
   
 	Backbone.history.start();

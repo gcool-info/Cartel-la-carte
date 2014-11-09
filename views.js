@@ -18,9 +18,9 @@ var headerView = Backbone.View.extend({
   	},
 
 	render: function() {
-		$('.navbar-inverse').css('background-color', appModel.headerColor);
-		console.log(appModel.get('headerTitle'));
-		this.$el.html(_.template($('#header').html(), {model: appModel.get('headerTitle')}));
+		$('.navbar-inverse').css('background-color', this.model.headerColor);
+		console.log(this.model); 
+		this.$el.html(_.template($('#header').html(), {model: this.model}));
 	},
 	
 	goBack: function() {
