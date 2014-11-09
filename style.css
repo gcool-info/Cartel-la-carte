@@ -204,3 +204,7 @@ a.sprite.active
 .navbar-header {
 	width: 0;
 }
+.navbar-toggle
+{
+    display: inline-block;
+}
