@@ -101,6 +101,9 @@ h2 {
 a .list-element:first-child {
 	margin-top: 1em;
 }
+a .list-element.first:first-child {
+	margin-top: 6em;
+}
 
 
 .list-element.grey {
