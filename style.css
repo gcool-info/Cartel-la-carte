@@ -244,6 +244,10 @@ a.sprite.active
     text-decoration: none;
     display: block;
 }
+.single-art .video-container
+{
+    padding-top: 60px;
+}
 
 .progress-bar {
 	position: absolute;
@@ -256,5 +260,4 @@ a.sprite.active
 .progress-bar.foreground {
 	width: 100%;
 	left: -100%;
->>>>>>> c6aa3eb763271cb69ae5ac92355bdcd9ddff4d4e
 }
