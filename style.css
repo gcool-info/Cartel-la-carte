@@ -125,6 +125,33 @@ h2 {
 	color: #00a4e4;
 }
 
+.humeurs
+{
+    margin: 20px 0;
+}
+a.sprite
+{
+    display: block;
+    height: 180px;
+    margin: auto;
+    width: 190px;
+    background-size: cover;
+    background-position: right;
+}
+a.sprite:hover,
+a.sprite:focus,
+a.sprite.active
+{
+    background-position: left;
+}
+.curieux { background-image: url('assets/img/ico-curieux.png'); }
+.joueur { background-image: url('assets/img/ico-joueur.png'); }
+.temeraire { background-image: url('assets/img/ico-téméraire.png'); }
+
+.comique { background-image: url('assets/img/ico-comique.png'); }
+.melancolique { background-image: url('assets/img/ico-mélancolique.png'); }
+.coquin { background-image: url('assets/img/ico-coquin.png'); }
+
 .explanation .the-text {
 	margin-top: 3em;
 	width: 60%;
