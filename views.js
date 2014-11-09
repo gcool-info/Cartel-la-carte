@@ -25,6 +25,18 @@ var headerView = Backbone.View.extend({
 var profileView = Backbone.View.extend({
 	el: '.page',
 
+	events: {
+		'click a.btn-circle': 'addClass'
+	},
+
+	addClass: function (e) {
+		$('a.btn-circle').removeClass('active'),
+		$(e.currentTarget).addClass('active');
+		console.log('clicked');
+		console.log(e);
+		e.preventDefault();
+	},
+
 	render: function() {
 		this.$el.html(_.template($('#profile').html()));
 	},
