@@ -240,4 +240,5 @@ a.sprite.active
 {
     color: #000;
     text-decoration: none;
+    display: block;
 }
