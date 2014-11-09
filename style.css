@@ -10,7 +10,7 @@ body {
 }
 h1 {
 	font-weight: 700;
-	font-size: 1.7em;
+	font-size: 1.4em;
 }
 
 h2 {
@@ -86,8 +86,25 @@ h2 {
     font-size: 15px;
 }
 .list-element {
-	margin-top: 4em;
+	margin-top: 1em;
 }
+
+.list-element:first-child {
+	margin-top: 6em;
+}
+
+
+.list-element:first-child {
+	margin-top: 6em;
+}
+
+a .list-element:first-child {
+	margin-top: 1em;
+}
+a .list-element.first:first-child {
+	margin-top: 6em;
+}
+
 
 .list-element.grey {
 	-webkit-filter: grayscale(100%);
@@ -113,11 +130,13 @@ h2 {
 }
 
 .list-element img {
-	width: 80%;
+	width: 60%;
 }
 
 .list-element .image {
-	text-align: center;
+	width: 30%;
+	text-align: right;
+	padding-right: 20px;
 }
 
 .explanation {
