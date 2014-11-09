@@ -1,6 +1,7 @@
 /* Stores the header info */
 var appModel = Backbone.Model.extend({
 	default: {
-		headerTitle: 'Téméraire'
+		headerTitle: 'Téméraire',
+		headerColor: '3e3e3e'
 	}
 });

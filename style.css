@@ -111,7 +111,7 @@ h2 {
 }
 
 .explanation {
-	margin-top: 20vh;
+	padding-top: 20vh;
 }
 
 .explanation .btn-circle {
@@ -151,3 +151,20 @@ a.sprite.active
 .comique { background-image: url('assets/img/ico-comique.png'); }
 .melancolique { background-image: url('assets/img/ico-mélancolique.png'); }
 .coquin { background-image: url('assets/img/ico-coquin.png'); }
+
+.explanation .the-text {
+	margin-top: 3em;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.explanation .the-text h2 {
+	font-size: 3.5em;
+}
+
+.explanation .the-text h3 {
+	margin-top: 2em;
+	font-style: italic;
+	font-size: 2em;
+}
