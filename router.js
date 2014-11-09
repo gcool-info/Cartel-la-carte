@@ -5,7 +5,8 @@ var Router = Backbone.Router.extend({
 		'profile': 'profilePage',
 		'art-list': 'artListPage',
 		'explanation': 'explanationPage',
-		'artwork': 'artworkPage',
+		'artworkTemeraire': 'artworkTemerairePage',
+
 	},
 
 	initialize: function() {
