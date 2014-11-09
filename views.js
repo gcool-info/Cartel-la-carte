@@ -38,6 +38,7 @@ var profileView = Backbone.View.extend({
 	},
 
 	render: function() {
+		$('body').css('background-color', 'ebebeb');
 		this.$el.html(_.template($('#profile').html()));
 	},
 });
