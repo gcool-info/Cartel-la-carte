@@ -3,7 +3,8 @@ var Router = Backbone.Router.extend({
 		'' : 'home',
 		'profile': 'profilePage',
 		'art-list': 'artListPage',
-		'explanation': 'explanationPage'
+		'explanation': 'explanationPage',
+		'artwork': 'artworkPage',
 	},
 
 	initialize: function() {
@@ -34,6 +35,11 @@ var Router = Backbone.Router.extend({
 
 		var explanation = new explanationView();
 		explanation.render();
+	},
+	artworkPage: function() {
+
+		var artwork = new artworkView();
+		artwork.render();
 	}
 
 });

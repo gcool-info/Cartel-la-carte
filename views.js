@@ -60,3 +60,11 @@ var explanationView = Backbone.View.extend({
 		this.$el.html(_.template($('#explanation').html()));
 	},
 });
+
+var artworkView = Backbone.View.extend({
+	el: '.page',
+
+	render: function() {
+		this.$el.html(_.template($('#artwork').html()));
+	},
+});
