@@ -21,6 +21,7 @@ var Router = Backbone.Router.extend({
 
 	profilePage: function() {
 		header.render();
+		footer.render();
 		var profile = new profileView();
 		profile.render();
 		
@@ -28,8 +29,6 @@ var Router = Backbone.Router.extend({
 	},
 
 	artListPage: function() {
-		appModel.set('headerColor', 'ec462f');
-
 		var artList = new artListView();
 		artList.render();
 	},
