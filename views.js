@@ -28,6 +28,13 @@ var headerView = Backbone.View.extend({
 	},
 });
 
+var footerView = Backbone.View.extend({
+	el: '.footer',
+	render: function() {
+		this.$el.html(_.template($('#footer').html()));
+	}
+});
+
 var profileView = Backbone.View.extend({
 	el: '.page',
 
