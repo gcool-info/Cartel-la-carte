@@ -76,8 +76,17 @@ var artListView = Backbone.View.extend({
 	el: '.page',
 
 	render: function() {
-		$('body').css('background-color', 'ebebeb')
-		this.$el.html(_.template($('#art-list').html()));
+		$('body').css('background-color', 'ebebeb');
+
+		var currentMood = appModel.get('headerTitle');
+
+
+		if (currentMood == 'téméraire' ) {
+			this.$el.html(_.template($('#art-list-temeraire').html()));
+		} else {
+			this.$el.html(_.template($('#art-list-coquin').html()));
+		}
+		
 	},
 });
 
@@ -87,11 +96,18 @@ var explanationView = Backbone.View.extend({
 
 	events: {
 		'click #temeraire': 'goTemeraire',
-		//'click #coquin': goCoquin
+		'click #coquin': 'goCoquin'
 	},
 
 	goTemeraire: function() {
 		appModel.set('headerTitle', 'téméraire');
+		appModel.set('headerColor', 'ec462f');
+		router.navigate('art-list', {trigger: true});
+	},
+
+	goCoquin: function() {
+		appModel.set('headerTitle', 'coquin');
+		appModel.set('headerColor', '9a4d9e');
 		router.navigate('art-list', {trigger: true});
 	},
 
@@ -108,5 +124,13 @@ var artworkTemeraireView = Backbone.View.extend({
 	render: function() {
 		$('body').css('background-color', 'EBEBEB');
 		this.$el.html(_.template($('#artworkTemeraire').html()));
+	},
+});
+
+var artworkCoquin = Backbone.View.extend({
+	el: '.page',
+
+	render: function() {
+		this.$el.html(_.template($('#artworkCoquin').html()));
 	},
 });

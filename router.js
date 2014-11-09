@@ -6,6 +6,7 @@ var Router = Backbone.Router.extend({
 		'art-list': 'artListPage',
 		'explanation': 'explanationPage',
 		'artworkTemeraire': 'artworkTemerairePage',
+		'artworkCoquin': 'artworkCoquinPage',
 
 	},
 
@@ -20,6 +21,7 @@ var Router = Backbone.Router.extend({
 
 	profilePage: function() {
 		header.render();
+		footer.render();
 		var profile = new profileView();
 		profile.render();
 		
@@ -27,9 +29,6 @@ var Router = Backbone.Router.extend({
 	},
 
 	artListPage: function() {
-		appModel.set('headerTitle', 'téméraire');
-		appModel.set('headerColor', 'ec462f');
-
 		var artList = new artListView();
 		artList.render();
 	},
@@ -44,6 +43,11 @@ var Router = Backbone.Router.extend({
 	artworkTemerairePage: function() {
 		var artworkTemeraire = new artworkTemeraireView();
 		artworkTemeraire.render();
+	},
+
+	artworkCoquinPage: function() {
+		var artworkCoquin = new artworkCoquinView();
+		artworkCoquin.render();
 	}
 
 });

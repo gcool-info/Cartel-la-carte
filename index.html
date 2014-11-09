@@ -166,9 +166,9 @@
 
     <!-- /page profile -->
 
-  <script type="text/template" id="art-list">
+  <script type="text/template" id="art-list-temeraire">
     <div class="container">
-      <a href="">
+      <a href="#artworkTemeraire">
         <table class="list-element">
           <tr>
             <td class="image">
@@ -185,8 +185,7 @@
           </tr>
         </table>
       </a>
-      <a href="">
-        <table class="list-element">
+        <table class="list-element grey">
           <tr>
             <td class="image">
               <span><img src="assets/img/oeuvre_2.png" alt=""/></span>
@@ -201,9 +200,7 @@
             </td>
           </tr>
         </table>
-      </a>
-      <a href="">
-        <table class="list-element">
+        <table class="list-element grey">
           <tr>
             <td class="image">
               <span><img src="assets/img/oeuvre_3.png" alt=""/></span>
@@ -218,7 +215,58 @@
             </td>
           </tr>
         </table>
+    </div>
+  </script>
+
+  <script type="text/template" id="art-list-coquin">
+    <div class="container">
+      <a href="#artworkCoquin">
+        <table class="list-element">
+          <tr>
+            <td class="image">
+              <span><img src="assets/img/oeuvre_1.png" alt=""/></span>
+            </td>
+            <td>
+              <h1>RETOUR DE L&#39;AUBERG</h1>
+              <h2>Pierter Brueghel Le Jeune</h2>
+              <h4>
+                <i class="fa fa-map-marker"></i>
+                Desmarais 4ème
+              </h4>
+            </td>
+          </tr>
+        </table>
       </a>
+        <table class="list-element grey">
+          <tr>
+            <td class="image">
+              <span><img src="assets/img/oeuvre_2.png" alt=""/></span>
+            </td>
+            <td>
+              <h1>SAINT GEORGES ET LE DRAGON</h1>
+              <h2>River Briton</h2>
+              <h4>
+                <i class="fa fa-map-marker"></i>
+                Desmarais 4ème
+              </h4>
+            </td>
+          </tr>
+        </table>
+        <table class="list-element grey">
+          <tr>
+            <td class="image">
+              <span><img src="assets/img/oeuvre_3.png" alt=""/></span>
+            </td>
+            <td>
+              <h1>Funérailles d&#39;un officier de marine sous louis xvi</h1>
+              <h2>Eugène Isabey</h2>
+              <h4>
+                <i class="fa fa-map-marker"></i>
+                Desmarais 4ème
+              </h4>
+            </td>
+          </tr>
+        </table>
     </div>
   </script>
 
@@ -401,6 +449,7 @@
 
   <script type="text/javascript">
   var appModel = new appModel();
+
 	var router = new Router();
 	var header = new headerView({model: appModel});
 	var home = new homeScreen();
