@@ -1,7 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Vollkorn);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700);
 
 body {
     font-family: 'Vollkorn', serif;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 1.7em;
+}
+
+h2 {
+	font-style: italic;
 }
 
 /* home */
@@ -63,4 +72,31 @@ body {
 }
 .btn-circle small {
     font-size: 15px;
+}
+.list-element {
+	margin-top: 4em;
+}
+
+.list-element h1 {
+	text-transform: uppercase;
+}
+
+.list-element h2 {
+	margin-top: 0.1em;
+}
+
+.list-element h4 {
+	color: #ec462f;
+}
+
+.list-element td {
+	width: 40%;
+}
+
+.list-element img {
+	width: 80%;
+}
+
+.list-element .image {
+	text-align: center;
 }
