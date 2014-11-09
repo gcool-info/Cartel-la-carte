@@ -204,7 +204,10 @@ a.sprite.active
 .navbar-header {
 	width: 0;
 }
-.navbar-toggle
-{
+.navbar-toggle {
     display: inline-block;
+}
+
+.navbar-inverse {
+	border: none;
 }

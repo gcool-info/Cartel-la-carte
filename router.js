@@ -14,15 +14,15 @@ var Router = Backbone.Router.extend({
 
 	home:function() {
 		home.render();
-		footer.render();
+		appModel.set('nextRoute', 'profile');
 	},
 
 	profilePage: function() {
 		header.render();
-
 		var profile = new profileView();
 		profile.render();
-		footer.render();
+		
+		appModel.set('nextRoute', 'explanation');
 	},
 
 	artListPage: function() {
