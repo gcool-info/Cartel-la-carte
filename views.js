@@ -3,6 +3,7 @@ var homeScreen = Backbone.View.extend({
 
 	render: function() {
 		this.$el.html(_.template($('#home').html()));
+		$('body').css('background-color', 'white');
 	},
 });
 
@@ -25,7 +26,10 @@ var headerView = Backbone.View.extend({
 	},
 	
 	goBack: function() {
+
 		window.history.back();
+		$('.header').html('');
+		$('.footer').html('');
 	},
 });
 
@@ -81,9 +85,20 @@ var artListView = Backbone.View.extend({
 var explanationView = Backbone.View.extend({
 	el: '.page',
 
+	events: {
+		'click #temeraire': 'goTemeraire',
+		//'click #coquin': goCoquin
+	},
+
+	goTemeraire: function() {
+		appModel.set('headerTitle', 'téméraire');
+		router.navigate('art-list', {trigger: true});
+	},
+
 	render: function() {
 		$('body').css('background-color', 'ebebeb')
 		this.$el.html(_.template($('#explanation').html()), {model: appModel});
+		$('.footer').html('');
 	},
 });
 
