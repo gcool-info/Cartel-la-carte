@@ -10,7 +10,8 @@ var headerView = Backbone.View.extend({
 	el: '.header',
 
 	initialize: function() {
-		this.listenTo(appModel, 'change', this.render);
+		this.listenTo(appModel, 'change:headerTitle', this.render);
+		this.listenTo(appModel, 'change:headerColor', this.render);
 	},
 
 	events: {
@@ -30,8 +31,15 @@ var headerView = Backbone.View.extend({
 
 var footerView = Backbone.View.extend({
 	el: '.footer',
+
+	initialize: function() {
+		this.listenTo(appModel, 'change:nextRoute', this.render);
+	},
+
 	render: function() {
 		this.$el.html(_.template($('#footer').html()));
+
+		$('#footer-link').attr('href', '#' + appModel.get('nextRoute'));
 	}
 });
 
