@@ -76,8 +76,17 @@ var artListView = Backbone.View.extend({
 	el: '.page',
 
 	render: function() {
-		$('body').css('background-color', 'ebebeb')
-		this.$el.html(_.template($('#art-list').html()));
+		$('body').css('background-color', 'ebebeb');
+
+		var currentMood = appModel.get('headerTitle');
+
+
+		if (currentMood == 'téméraire' ) {
+			this.$el.html(_.template($('#art-list-temeraire').html()));
+		} else {
+
+		}
+		
 	},
 });
 
@@ -87,11 +96,16 @@ var explanationView = Backbone.View.extend({
 
 	events: {
 		'click #temeraire': 'goTemeraire',
-		//'click #coquin': goCoquin
+		'click #coquin': 'goCoquin'
 	},
 
 	goTemeraire: function() {
 		appModel.set('headerTitle', 'téméraire');
+		router.navigate('art-list', {trigger: true});
+	},
+
+	goCoquin: function() {
+		appModel.set('headerTitle', 'coquin');
 		router.navigate('art-list', {trigger: true});
 	},
 
@@ -107,5 +121,13 @@ var artworkTemeraireView = Backbone.View.extend({
 
 	render: function() {
 		this.$el.html(_.template($('#artworkTemeraire').html()));
+	},
+});
+
+var artworkCoquin = Backbone.View.extend({
+	el: '.page',
+
+	render: function() {
+		this.$el.html(_.template($('#artworkCoquin').html()));
 	},
 });
