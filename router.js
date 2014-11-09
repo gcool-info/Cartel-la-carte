@@ -30,11 +30,11 @@ var Router = Backbone.Router.extend({
 	},
 
 	artListTemerairePage: function() {
-		appModel.set('headerTitle', 'téméraire');
-		appModel.set('headerColor', 'ec462f');
-
 		var artListTemeraire = new artListTemeraireView();
 		artListTemeraire.render();
+
+		appModel.set('headerTitle', 'téméraire');
+		appModel.set('headerColor', 'ec462f');
 	},
 
 	artListCoquinPage: function() {
@@ -58,6 +58,9 @@ var Router = Backbone.Router.extend({
 
 		var artworkTemeraire = new artworkTemeraireView();
 		artworkTemeraire.render();
+
+		appModel.set('headerTitle', 'téméraire');
+		appModel.set('headerColor', 'ec462f');
 	},
 
 	artworkCoquinPage: function() {
@@ -66,6 +69,9 @@ var Router = Backbone.Router.extend({
 
 		var artworkCoquin = new artworkCoquinView();
 		artworkCoquin.render();
+
+		appModel.set('headerTitle', 'coquin');
+		appModel.set('headerColor', '9a4d9e');
 	}
 
 });

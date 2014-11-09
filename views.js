@@ -4,6 +4,7 @@ var homeScreen = Backbone.View.extend({
 	render: function() {
 		this.$el.html(_.template($('#home').html()));
 		$('body').css('background-color', 'white');
+		$('.header').html('');
 	},
 });
 
@@ -28,8 +29,6 @@ var headerView = Backbone.View.extend({
 	goBack: function() {
 
 		window.history.back();
-		$('.header').html('');
-		$('.footer').html('');
 	},
 });
 
@@ -78,7 +77,6 @@ var artListTemeraireView = Backbone.View.extend({
 	render: function() {
 		$('body').css('background-color', 'ebebeb');		
 		this.$el.html(_.template($('#art-list-temeraire').html()));
-		
 	},
 });
 
