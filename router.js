@@ -40,10 +40,9 @@ var Router = Backbone.Router.extend({
 		var explanation = new explanationView();
 		explanation.render();
 	},
-	artworkPage: function() {
-
-		var artwork = new artworkView();
-		artwork.render();
+	artworkTemerairePage: function() {
+		var artworkTemeraire = new artworkTemeraireView();
+		artworkTemeraire.render();
 	}
 
 });

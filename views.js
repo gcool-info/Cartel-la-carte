@@ -87,10 +87,10 @@ var explanationView = Backbone.View.extend({
 	},
 });
 
-var artworkView = Backbone.View.extend({
+var artworkTemeraireView = Backbone.View.extend({
 	el: '.page',
 
 	render: function() {
-		this.$el.html(_.template($('#artwork').html()));
+		this.$el.html(_.template($('#artworkTemeraire').html()));
 	},
 });
