@@ -3,9 +3,10 @@
 body {
     font-family: 'Vollkorn', serif;
     background-color: #ebebeb!important;
+    -webkit-font-smoothing: antialiased;
 }
 body p, .contents{
-	font-size: 18px;
+	font-size: 22px;
 }
 .no-serif
 {
@@ -26,6 +27,7 @@ h2 {
 }
 .home .logo-accueil img {
     margin-top: -188px;
+    max-width: 100%;
 }
 
 .montreal-logo {
@@ -74,6 +76,7 @@ h2 {
 }
 .btn-circle .glyphicon{
     font-size: 14px;
+    line-height: 24px;
 }
 .btn-circle.active {
     color:#FFF;
@@ -84,12 +87,15 @@ h2 {
 .btn-circle strong {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
     font-size: 40px;
+    line-height: 30px;
 }
 .btn-circle small {
     font-size: 15px;
 }
+
 .list-element {
 	margin-top: 1em;
+	padding: 0 3em;
 }
 
 .list-element:first-child {
@@ -123,7 +129,9 @@ a .list-element.first:first-child {
 .list-element h2 {
 	margin-top: 0.1em;
 }
-
+.list-element h1, .list-element h2 {
+	color: #000000;
+}
 .list-element h4 {
 	color: #ec462f;
 }
@@ -133,7 +141,8 @@ a .list-element.first:first-child {
 }
 
 .list-element img {
-	width: 60%;
+	width: 100%;
+	float: right;
 }
 
 .list-element .image {
@@ -226,8 +235,9 @@ a.sprite.active
 
 #headerTitle {
 	color: white;
-	font-size: 2.5em;
+	font-size: 1.5em;
     text-transform: uppercase;
+    line-height: 2.2em;
 }
 
 .navbar-brand {
@@ -256,6 +266,10 @@ a.sprite.active
 .contents .panel-group .panel-default>.panel-heading {
     background-color: #FFFFFF;
 }
+.contents .panel-title{
+	text-transform: uppercase;
+	font-size: 20px;
+}
 .contents .panel-title a:link,
 .contents .panel-title a:visited
 {
@@ -263,10 +277,10 @@ a.sprite.active
     text-decoration: none;
 }
 .panel-body {
-	padding: 30px;
+	padding: 40px;
 }
 .panel-heading {
-	padding: 15px 30px;
+	padding: 15px 40px;
 }
 .contents .panel-title a.collapsed
 {
@@ -279,7 +293,7 @@ a.sprite.active
     padding-top: 60px;
 }
 .single-art .container{
-	padding: 30px;
+	padding: 40px;
 }
 
 .progress-bar {
@@ -293,4 +307,67 @@ a.sprite.active
 .progress-bar.foreground {
 	width: 100%;
 	left: -100%;
+}
+
+.profile h3{
+	margin-top: 40px;
+}
+
+#back{
+	color:white;
+}
+
+.artist-image img{
+	max-width: 100%;
+	padding: 2em 0;
+}
+#accordion{
+	margin-bottom: 0;
+}
+blockquote {
+border: none;
+margin: 0;
+padding: 2em 0;
+font-size: 22px;
+color: rgb(236, 70, 47);
+font-style: italic;
+}
+blockquote p{
+	font-size: 1.2em;
+}
+
+.dropdown-menu>li>a {
+padding: 5px 20px;
+font-size: 1.5em;
+text-transform: uppercase;
+text-align: right;
+}
+.navbar-toggle{
+	border:none;
+	margin-right: 0;
+}
+
+
+
+@media (min-width: 768px){
+	.col-md-4 {width: 33.33333333%;}
+}
+@media (max-width: 767px) {
+	.col-xs-10{padding: 0;}
+	.container{padding: 0;}
+	.list-element{padding: 0;}
+	.list-element h1{font-size: 1em;margin-top: 5px;margin-bottom: 5px;}
+	.list-element h2{font-size: 1em;}
+	.list-element h4{font-size: 14px;;margin-top: 5px;margin-bottom: 5px;}
+	.list-element .col-xs-4 {padding-right: 0;}
+	
+	.explanation .btn-circle{width: 50px;height: 50px;}
+	.explanation .fa {font-size: 1.3em;}
+	.explanation .the-text h2 {font-size: 1.5em;}
+	.explanation .the-text h3 {margin-top: 1em;font-style: italic;font-size: 1em;}	
+	
+	a.sprite{width:140px;height:130px;}
+	.humeurs {margin-bottom: 100px;}
+	
+	body p, .contents {font-size: 20px;}
 }

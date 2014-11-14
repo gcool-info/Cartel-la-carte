@@ -2,11 +2,14 @@
 	<head>
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, user-scalable=no">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+
     	<title>MUSEO PLUS</title>
-    	
+    	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
       <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     	<link rel="stylesheet" href="style.css">
+    	
   	</head>
   
   	<body>
@@ -31,13 +34,13 @@
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="nav-header">
-                    <div class="col-xs-1">
-                        <a class="navbar-brand pull-left" id="back"><i class="fa fa-chevron-left"></i></a>
+                    <div class="col-xs-2">
+                        <a class="navbar-brand pull-left" id="back"><i class="fa fa-chevron-left"> </i></a>
                     </div>
-                    <div class="col-xs-10 text-center">
+                    <div class="col-xs-8 text-center">
                         <div id="headerTitle"></div>
                     </div>
-                    <div class="col-xs-1">
+                    <div class="col-xs-2">
                         <div class="dropdown pull-right">
                             <button type="button" class="navbar-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="icon-bar"></span>
@@ -47,10 +50,10 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#explanation">Curieux</a></li>
                                 <li><a href="#explanation">Joueur</a></li>
-                                <li><a href="#explanation">Téméraire</a></li>
+                                <li><a href="#art-list-temeraire">Téméraire</a></li>
                                 <li><a href="#explanation">Comique</a></li>
                                 <li><a href="#explanation">Mélancolique</a></li>
-                                <li><a href="#explanation">Coquin</a></li>
+                                <li><a href="#art-list-coquin">Coquin</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#">Accueil</a></li>
                             </ul>
@@ -145,26 +148,23 @@
 				</div>
 
                 <div class="row humeurs">
-                    <div class="col-xs-4">
+                    <div class="col-xs-6 col-sm-4">
                         <a class="sprite curieux" href="#profile"></a>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-6 col-sm-4">
                         <a class="sprite joueur" href="#profile"></a>
                     </div>
-                    <div class="col-xs-4">
-                        <a class="sprite temeraire" href="#profile"></a>
+                    <div class="col-xs-6 col-sm-4">
+                        <a class="sprite temeraire" href="#art-list-temeraire"></a>
                     </div>
-                </div>
-
-                <div class="row humeurs">
-                    <div class="col-xs-4">
+                    <div class="col-xs-6 col-sm-4">
                         <a class="sprite comique" href="#profile"></a>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-6 col-sm-4">
                         <a class="sprite melancolique" href="#profile"></a>
                     </div>
-                    <div class="col-xs-4">
-                        <a class="sprite coquin" href="#profile"></a>
+                    <div class="col-xs-6 col-sm-4">
+                        <a class="sprite coquin" href="#art-list-coquin"></a>
                     </div>
                 </div>
 
@@ -176,191 +176,143 @@
     <!-- /page profile -->
 
   <script type="text/template" id="art-list-temeraire">
-    <div class="container">
-      
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_1.jpg" alt=""/></span>
-            </td>
-            <td>
+    <div class="container container-fluid">
+		
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_1.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Pierter Brueghel Le Jeune</h1>
               <h2 class="nom-oeuvre">Retour de l'auberge</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais 4ème
               </h4>
-            </td>
-          </tr>
-        </table>
+            </div>
+		</div>
       
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_2.jpg" alt=""/></span>
-            </td>
-            <td>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_2.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Briton Rivière</h1>
               <h2 class="nom-oeuvre">Saint Georges et le dragon</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais 4ème
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_3.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_3.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">George Romney</h1>
               <h2 class="nom-oeuvre">Portrait de sir Robert Gunning</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais 4ème
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_4.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_4.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Eugène Isabey</h1>
               <h2 class="nom-oeuvre">Funérailles d'un officier de marine sous Louis XVI</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais 4ème
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_5.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_5.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Atelier du baron François-Pascal-Simon Gérard</h1>
               <h2 class="nom-oeuvre">Portrait en buste de Napoléon Ier en habit de sacre</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais 3ème  Salle Napoléon 
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_6.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_6.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Atelier de Bertel Thorvaldsen</h1>
               <h2 class="nom-oeuvre">L'Apothéose de Napoléon Ier</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais 3ème  Salle Napoléon 
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_7.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_7.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Tony Matelli </h1>
               <h2 class="nom-oeuvre">Vieil ennemi, nouvelle victime</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais S2
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_8.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_8.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Folkert De Jong</h1>
               <h2 class="nom-oeuvre">Les illusions de la vie - Cavalier</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais S2
               </h4>
-            </td>
-          </tr>
-        </table>
+            </div>
+		</div>
         <a href="#artworkTemeraire">
-        <table class="list-element">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_9.jpg" alt=""/></span>
-            </td>
-            <td>
+        <div class="list-element row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_9.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">BGL</h1>
               <h2 class="nom-oeuvre">Jouet d'adulte</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais S2
               </h4>
-            </td>
-          </tr>
-        </table> 
+            </div>
+		</div> 
         </a>     
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_10.jpg" alt=""/></span>
-            </td>
-            <td>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_10.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Alfred Laliberté </h1>
               <h2 class="nom-oeuvre">Édouard Tassé se battant avec le diable</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 2ème
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_11.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_11.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Horatio Walker</h1>
               <h2 class="nom-oeuvre">Les coupeurs de glace</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 2ème
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/t-oeuvre_12.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/t-oeuvre_12.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Paul Kane</h1>
               <h2 class="nom-oeuvre">Mah-Min</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 3ème
               </h4>
-            </td>
-          </tr>
-        </table>
+            </div>
+		</div>
       
     </div>
   </script>
@@ -370,173 +322,129 @@
 	    
 
       <a href="#artworkCoquin">
-      <table class="list-element first">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_1.jpg" alt=""/></span>
-            </td>
-            <td>
+      <div class="list-element first row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_1.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Matthias Stom</h1>
               <h2 class="nom-oeuvre">Le christ et la femme adultère</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais 4ème
               </h4>
-            </td>
-          </tr>
-        </table>
+            </div>
+		</div>
         </a>
         
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_2.jpg" alt=""/></span>
-            </td>
-            <td>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_2.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Rodin</h1>
               <h2 class="nom-oeuvre">Le penseur</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Desmarais 1er
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_3.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_3.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Edwin Holgate</h1>
               <h2 class="nom-oeuvre">Les baigneuses</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 2ème 
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_4.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_4.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Louis Philippe Hébert </h1>
               <h2 class="nom-oeuvre">La fée nicotine </h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 2ème 
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_5.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_5.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">William Brymner</h1>
               <h2 class="nom-oeuvre">Nu allongé </h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 2ème 
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_6.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_6.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Alfred Laliberté </h1>
               <h2 class="nom-oeuvre">La déesse </h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 2ème 
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_7.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_7.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Louis Philippe Hébert</h1>
               <h2 class="nom-oeuvre">La rosée </h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 1er
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_8.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_8.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Robert Tait McKenzie</h1>
               <h2 class="nom-oeuvre">Le coureur de relais</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 1er
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_9.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_9.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Robert Tait McKenzie</h1>
               <h2 class="nom-oeuvre">Sphère volante </h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 1er
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_10.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_10.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Henri Hébert</h1>
               <h2 class="nom-oeuvre">Melle A. C., danseuse d'Oslo</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 1er
               </h4>
-            </td>
-          </tr>
-        </table>
-        <table class="list-element grey">
-          <tr>
-            <td class="image">
-              <span><img src="assets/img/c-oeuvre_11.jpg" alt=""/></span>
-            </td>
-            <td>
+            </div>
+		</div>
+        <div class="list-element grey row">
+     		<div class="col-xs-4"><img src="assets/img/c-oeuvre_11.jpg" alt=""/></div>
+      		<div class="col-xs-8">
               <h1 class="artiste">Henri Hébert</h1>
               <h2 class="nom-oeuvre">Ève</h2>
               <h4>
                 <i class="fa fa-map-marker"></i>
                 Bourgie 1er
               </h4>
-            </td>
-          </tr>
-        </table>
+            </div>
+		</div>
       
     </div>
   </script>
@@ -566,10 +474,10 @@
           </h3>
         </div>
          <div class="row link-lists">
-                <div class="col-xs-3"></div>
-                <div class="col-xs-3"><span><a class="sprite coquin" href="#art-list-coquin"></a></span></div>
-                <div class="col-xs-3"><span><a class="sprite temeraire" href="#art-list-temeraire"></a></span></div>
-                <div class="col-xs-3"></div>
+                <div class="col-sm-2"></div>
+                <div class="col-xs-6 col-sm-4"><span><a class="sprite coquin" href="#art-list-coquin"></a></span></div>
+                <div class="col-xs-6 col-sm-4"><span><a class="sprite temeraire" href="#art-list-temeraire"></a></span></div>
+                <div class="col-sm-2"></div>
          </div>
         
       </div>
@@ -587,12 +495,12 @@
 
                 <h3>BGL</h3>
                 <p class="artInformations">
-                    <i>Jouet d&#39;enfant</i> <br/>
+                    <i>Jouet d’adulte</i> <br/>
                     2003
                 </p>
 
                 <p class="artDescription">
-                    Vehicule tout terrain d&#39;occasion, flèches, bois, peinture <br/>
+                    Véhicule tout terrain d&#39;occasion, flèches, bois, peinture <br/>
                     <i>150 x 110 x 170 cm (approx.)</i>
                 </p>
 
@@ -622,11 +530,11 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    Faisant référence à la tradition de la chasse au Québec, la pièce qui gît sur le sol peut rappeler un orignal que l’on viendrait d’abattre. Teintée d’humour et d’ironie, l’installation peut aussi sembler angoissante, car elle questionne la façon dont l’homme exploite et pollue la nature. Elle nous rappelle que nous devons réviser notre façon de consommer. 
+                                    <p>Faisant référence à la tradition de la chasse au Québec, la pièce qui gît sur le sol peut rappeler un orignal que l’on viendrait d’abattre. Teintée d’humour et d’ironie, l’installation peut aussi sembler angoissante, car elle questionne la façon dont l’homme exploite et pollue la nature. Elle nous rappelle que nous devons réviser notre façon de consommer. </p>
 
-Jouet d’adulte a aussi fait l’objet d’une performance. Pendant un défilé de la Manif d’art III de Québec, en 2005, elle a été promenée sur une remorque, comme un trophée de chasse. 
+<p>Jouet d’adulte a aussi fait l’objet d’une performance. Pendant un défilé de la Manif d’art III de Québec, en 2005, elle a été promenée sur une remorque, comme un trophée de chasse. </p>
 
-« Nous comptons réaliser une œuvre qui rejoint des préoccupations sociales et humanitaires, et qui jette un regard évocateur sur les sociétés dont nous faisons partie. Pour ce faire, nous nous servons d’images simples et familières, car, pour amener les gens à porter un regard différent sur l’environnement dans lequel ils évoluent tous les jours, nous croyons qu’il faut partir du quotidien, du tangible. Cependant, le but de nos installations n’est pas de reproduire les objets tels quels, mais bien de créer un écart qui invite à la contemplation et à une prise de conscience.”  - BGL
+<blockquote><p>« Nous comptons réaliser une œuvre qui rejoint des préoccupations sociales et humanitaires, et qui jette un regard évocateur sur les sociétés dont nous faisons partie. Pour ce faire, nous nous servons d’images simples et familières, car, pour amener les gens à porter un regard différent sur l’environnement dans lequel ils évoluent tous les jours, nous croyons qu’il faut partir du quotidien, du tangible. Cependant, le but de nos installations n’est pas de reproduire les objets tels quels, mais bien de créer un écart qui invite à la contemplation et à une prise de conscience.”</p><footer>BGL</footer> </blockquote>
                                 </div>
                             </div>
                         </div>
@@ -640,13 +548,20 @@ Jouet d’adulte a aussi fait l’objet d’une performance. Pendant un défilé
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
-
-                                    Formé par Jasmin Bilodeau, Sébastien Giguère et Nicolas Laverdière, BGL voit le jour en 1996. Depuis, le collectif joue avec humour sur des thèmes liés au mode de vie nord-américain tel que la consommation de masse et la relation de l’humain avec la nature. Leur production artistique s’oriente autour de la performance, de la sculpture et de l’installation in-situ. 
+									<div class="artist-content">
+                                    <p>Formé par <b>Jasmin Bilodeau</b>, <b>Sébastien Giguère</b> et <b>Nicolas Laverdière</b>, BGL voit le jour en 1996. Depuis, le collectif joue avec humour sur des thèmes liés au mode de vie nord-américain tel que la consommation de masse et la relation de l’humain avec la nature. Leur production artistique s’oriente autour de la performance, de la sculpture et de l’installation in-situ. 
 En plus d’être à l’affiche de différents musées, galeries et événements d’art à travers le monde, des œuvres de BGL se retrouvent dans plusieurs collections privées et publiques, comme celles du Musée National des beaux-arts du Québec, du Musée des beaux-arts de Montréal et du Musée des beaux-arts du Canada. 
-BGL à propos de leur démarche artistique :
+BGL à propos de leur démarche artistique :</p></div>
+<div class="artist-image col-sm-4">
+	
+	<img src="assets/img/BGL-portrait.png" alt=""/></div>
 
-« Nous éprouvons un réel plaisir à faire oublier le cadre habituel et conventionnel où l’art est vécu, afin d’abattre les distances entre l’être humain et l’art et amener le spectateur, à vif et déséquilibré, à vivre une expérience physique et active. » 
+<div class="artist-content col-sm-8">
+<blockquote><p>
+« Nous éprouvons un réel plaisir à faire oublier le cadre habituel et conventionnel où l’art est vécu, afin d’abattre les distances entre l’être humain et l’art et amener le spectateur, à vif et déséquilibré, à vivre une expérience physique et active. » </p><footer>BGL</footer></blockquote>
 
+									</div>
+									
                                 </div>
                             </div>
                         </div>
@@ -661,7 +576,7 @@ BGL à propos de leur démarche artistique :
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                    La chasse à l’orignal occupe une place de choix dans les mœurs québécoises. L’automne, l’activité s’impose comme un rituel populaire bien apprécié des amateurs. Animal à l’allure puissante et à la chair délicieuse, l’orignal incarne la force et l’endurance. Symbole masculin, son panache est associé à la virilité. Exposé sur le capot de l'automobile ou du camion du chasseur victorieux, il est conservé comme trophée de chasse dans de nombreuses chaumières de la province. Chaque automne, on récompense même des chasseurs rapportant le plus beau panache. Qu’on le retrouve sur un panneau de signalisation routière, sur une pièce de 25 cents ou exposé dans un bar ou un commerce, l’orignal conserve une image symbolique indéniable.
+                                    <p>La chasse à l’orignal occupe une place de choix dans les mœurs québécoises. L’automne, l’activité s’impose comme un rituel populaire bien apprécié des amateurs. Animal à l’allure puissante et à la chair délicieuse, l’orignal incarne la force et l’endurance. Symbole masculin, son panache est associé à la virilité. Exposé sur le capot de l'automobile ou du camion du chasseur victorieux, il est conservé comme trophée de chasse dans de nombreuses chaumières de la province. Chaque automne, on récompense même des chasseurs rapportant le plus beau panache. Qu’on le retrouve sur un panneau de signalisation routière, sur une pièce de 25 cents ou exposé dans un bar ou un commerce, l’orignal conserve une image symbolique indéniable.</p>
                                 </div>
                             </div>
                         </div>
